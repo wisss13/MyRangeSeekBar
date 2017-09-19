@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Range seek bar initialized in code with ranges set"
+        android:id="@+id/tv_txt"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tv_txt"
+        android:id="@+id/seekbar_placeholder"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@+id/seekbar_placeholder"
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="14dp" />
+
+    <!--TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Range seek bar from xml with default range"
+        />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Range seek bar from xml with ranges set"
+        />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMinValue="20"
+        rsb:absoluteMaxValue="150"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Range seek bar from xml with ranges set and double values"
+        />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMinValue="15.23"
+        rsb:absoluteMaxValue="140.54"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Range seek bar from xml with single thumb to true"
+        />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMinValue="20"
+        rsb:absoluteMaxValue="150"
+        rsb:singleThumb="true"
+        /-->
+
+
+    <ImageView
+        android:layout_below="@id/tv_price"
+        android:src="@drawable/sms1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_below="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set ProgressBar"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_below="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable ProgressBar"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/circular_progress_view"
+        android:indeterminate="false"
+        android:layout_marginTop="60dp"/>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:layout_below="@+id/button2"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/donut_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:donut_progress="0"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
